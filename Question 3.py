@@ -1,5 +1,18 @@
 import turtle  # Import the turtle graphics module
 
+print("Example")
+print("Enter left branch angle (in degrees): 20")
+print("Enter right branch angle (in degrees): 25")
+print("Enter starting branch length: 100")
+print("Enter recursion depth: 5")
+print("Enter branch length reduction factor (e.g., 0.7): 0.7")
+
+print("")
+print("")
+print("")
+print("----------------------------------------------------------------")
+print("")
+
 # Function to draw the tree branches recursively
 def draw_branch(t, branch_length, left_angle, right_angle, depth, reduction_factor):
     """
@@ -13,6 +26,7 @@ def draw_branch(t, branch_length, left_angle, right_angle, depth, reduction_fact
     depth (int): Remaining depth of recursion.
     reduction_factor (float): Factor to reduce branch length with each level.
     """
+    
     if depth == 0:
         # Base case: if recursion depth reaches 0, draw a green leaf
         t.pencolor("green")  # Set pen color to green for leaves
@@ -81,4 +95,3 @@ def main():
 # Entry point of the program
 if __name__ == "__main__":
     main()  # Run the main function
-
